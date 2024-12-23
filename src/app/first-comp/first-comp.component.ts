@@ -26,4 +26,8 @@ export class FirstCompComponent {
     });
     console.log(this.messages);
   }
+
+  deleteMessage(index: number): void {
+    this.messages.splice(index, 1);
+  }
 }
